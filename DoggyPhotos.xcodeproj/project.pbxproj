@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		360AFE9129F16ABB00800868 /* DoggyPhotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AFE9029F16ABB00800868 /* DoggyPhotosApp.swift */; };
-		360AFE9329F16ABB00800868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AFE9229F16ABB00800868 /* ContentView.swift */; };
 		360AFE9529F16AC100800868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360AFE9429F16AC100800868 /* Assets.xcassets */; };
 		360AFE9829F16AC100800868 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360AFE9729F16AC100800868 /* Preview Assets.xcassets */; };
+		360AFE9F29F16AEA00800868 /* DoggyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AFE9E29F16AEA00800868 /* DoggyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		360AFE8D29F16ABB00800868 /* DoggyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		360AFE9029F16ABB00800868 /* DoggyPhotosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyPhotosApp.swift; sourceTree = "<group>"; };
-		360AFE9229F16ABB00800868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		360AFE9429F16AC100800868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360AFE9729F16AC100800868 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		360AFE9E29F16AEA00800868 /* DoggyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				360AFE9029F16ABB00800868 /* DoggyPhotosApp.swift */,
-				360AFE9229F16ABB00800868 /* ContentView.swift */,
+				360AFE9E29F16AEA00800868 /* DoggyView.swift */,
 				360AFE9429F16AC100800868 /* Assets.xcassets */,
 				360AFE9629F16AC100800868 /* Preview Content */,
 			);
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360AFE9329F16ABB00800868 /* ContentView.swift in Sources */,
 				360AFE9129F16ABB00800868 /* DoggyPhotosApp.swift in Sources */,
+				360AFE9F29F16AEA00800868 /* DoggyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
