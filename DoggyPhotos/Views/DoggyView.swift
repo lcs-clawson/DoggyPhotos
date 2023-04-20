@@ -22,6 +22,20 @@ struct DoggyView: View {
                 .fontWeight(.semibold)
             
             Spacer()
+            
+            Button(action: {
+                withAnimation(.easeIn(duration: 1.0)) {
+                }
+            }, label: {
+                Image(systemName: "arrow.down.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width:40)
+                    .tint(.black)
+                      
+                      })
+            Spacer()
+            
         }
         
     }
