@@ -9,7 +9,8 @@ import Foundation
 
 struct Doggy: Codable {
     var breed: String
-    var name: String
-    var age: Int
     var imageURL: String
 }
+
+let exampleDoggy = Doggy(breed: "Spitz", imageURL: "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_5989.jpg")
+ 
