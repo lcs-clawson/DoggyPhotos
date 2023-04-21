@@ -20,7 +20,7 @@ struct DoggyView: View {
             Button(action: {
                 withAnimation(.easeIn(duration: 1.0)) {
                     // Set the image URL when the button is pressed
-                    imageUrl = "https://images.dog.ceo/breeds/terrier-border/n02093754_3036.jpg"
+                    imageUrl = "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_5989.jpg"
                 }
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
