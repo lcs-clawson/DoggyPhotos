@@ -1,18 +1,11 @@
-//
-//  DoggyView.swift
-//  DoggyPhotos
-//
-//  Created by Cooper Lawson on 2023-04-20.
-//
-
 import SwiftUI
 
-
 struct DoggyView: View {
-    var body: some View {
     
+    @State var imageUrl: String?
+    
+    var body: some View {
         VStack{
-            
             Text("Doggy Photos")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
@@ -26,6 +19,8 @@ struct DoggyView: View {
             
             Button(action: {
                 withAnimation(.easeIn(duration: 1.0)) {
+                    // Set the image URL when the button is pressed
+                    imageUrl = "https://images.dog.ceo/breeds/terrier-border/n02093754_3036.jpg"
                 }
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
@@ -33,13 +28,23 @@ struct DoggyView: View {
                     .scaledToFit()
                     .frame(width:40)
                     .tint(.black)
-                
             })
-                
+            
             Spacer()
             
+            
+            if let url = imageUrl, let imageUrl = URL(string: url) {
+                AsyncImage(url: imageUrl,
+                           content: { downloadedImage in
+                    downloadedImage
+                },
+                           placeholder: {
+                    ProgressView()
+                })
+                .scaledToFit()
+                .frame(maxWidth: .infinity)
+            }
         }
-        
     }
 }
 
