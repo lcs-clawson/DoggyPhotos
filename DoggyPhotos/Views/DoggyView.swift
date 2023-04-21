@@ -8,7 +8,6 @@ struct DoggyView: View {
     
     @State var imageUrl: String?
     
-    
     var body: some View {
         VStack{
             Text("Doggy Photos")
@@ -25,7 +24,7 @@ struct DoggyView: View {
             Button(action: {
                 withAnimation(.easeIn(duration: 1.0)) {
                     // Set the image URL when the button is pressed
-                    imageUrl = "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_5989.jpg"
+                    imageUrl = currentDoggy.imageURL
                 }
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
@@ -49,7 +48,9 @@ struct DoggyView: View {
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
             }
+            
         }
+        .navigationTitle("Doggy Photos")
     }
 }
 
@@ -58,4 +59,3 @@ struct DoggyView_Previews: PreviewProvider {
         DoggyView()
     }
 }
-
