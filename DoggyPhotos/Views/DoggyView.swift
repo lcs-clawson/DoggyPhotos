@@ -2,6 +2,10 @@ import SwiftUI
 
 struct DoggyView: View {
     
+    @State var imageUrlOpacity = 0.0
+    
+    @State var currentDoggy = exampleDoggy
+    
     @State var imageUrl: String?
     
     var body: some View {
