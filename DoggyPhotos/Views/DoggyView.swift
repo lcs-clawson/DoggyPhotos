@@ -11,7 +11,7 @@ struct DoggyView: View {
     var body: some View {
     
         VStack{
-           
+            
             Text("Doggy Photos")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
@@ -32,8 +32,9 @@ struct DoggyView: View {
                     .scaledToFit()
                     .frame(width:40)
                     .tint(.black)
-                      
-                      })
+                
+            })
+                
             Spacer()
             
         }
