@@ -8,6 +8,7 @@ struct DoggyView: View {
     
     @State var imageUrl: String?
     
+    
     var body: some View {
         VStack{
             Text("Doggy Photos")
