@@ -24,7 +24,7 @@ struct DoggyView: View {
             Button(action: {
                 withAnimation(.easeIn(duration: 1.0)) {
                     // Set the image URL when the button is pressed
-                    imageUrl = currentDoggy.imageURL
+                    imageUrl = currentDoggy.imageUrl
                 }
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
@@ -36,7 +36,6 @@ struct DoggyView: View {
             
             Spacer()
             
-            
             if let url = imageUrl, let imageUrl = URL(string: url) {
                 AsyncImage(url: imageUrl,
                            content: { downloadedImage in
@@ -47,10 +46,11 @@ struct DoggyView: View {
                 })
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
+            } else {
+                ProgressView()
+                
             }
-            
         }
-        .navigationTitle("Doggy Photos")
     }
 }
 
@@ -59,8 +59,4 @@ struct DoggyView_Previews: PreviewProvider {
         DoggyView()
     }
 }
-
-    
-
-
 
