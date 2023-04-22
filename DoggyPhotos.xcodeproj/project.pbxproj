@@ -12,8 +12,8 @@
 		360AFE9829F16AC100800868 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360AFE9729F16AC100800868 /* Preview Assets.xcassets */; };
 		360AFE9F29F16AEA00800868 /* DoggyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AFE9E29F16AEA00800868 /* DoggyView.swift */; };
 		36B4850D29F17455009477FD /* Doggy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B4850C29F17455009477FD /* Doggy.swift */; };
-		36B4851029F17917009477FD /* NetworkServices in Sources */ = {isa = PBXBuildFile; fileRef = 36B4850F29F17917009477FD /* NetworkServices */; };
 		36B4851629F17D21009477FD /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B4851529F17D21009477FD /* RemoteImageView.swift */; };
+		36B4851A29F302E9009477FD /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B4851929F302E9009477FD /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		360AFE9729F16AC100800868 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		360AFE9E29F16AEA00800868 /* DoggyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyView.swift; sourceTree = "<group>"; };
 		36B4850C29F17455009477FD /* Doggy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doggy.swift; sourceTree = "<group>"; };
-		36B4850F29F17917009477FD /* NetworkServices */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkServices; sourceTree = "<group>"; };
 		36B4851529F17D21009477FD /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		36B4851929F302E9009477FD /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		36B4851729F17D36009477FD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				36B4850F29F17917009477FD /* NetworkServices */,
+				36B4851929F302E9009477FD /* NetworkServices.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -178,9 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B4851A29F302E9009477FD /* NetworkServices.swift in Sources */,
 				360AFE9129F16ABB00800868 /* DoggyPhotosApp.swift in Sources */,
 				360AFE9F29F16AEA00800868 /* DoggyView.swift in Sources */,
-				36B4851029F17917009477FD /* NetworkServices in Sources */,
 				36B4851629F17D21009477FD /* RemoteImageView.swift in Sources */,
 				36B4850D29F17455009477FD /* Doggy.swift in Sources */,
 			);

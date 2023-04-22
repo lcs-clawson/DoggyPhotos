@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Doggy: Identifiable, Codable {
+struct Doggy: Codable {
     var breed: String
     var imageURL: String
 }
