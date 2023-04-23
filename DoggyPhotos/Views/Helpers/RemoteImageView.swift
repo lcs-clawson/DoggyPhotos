@@ -51,7 +51,7 @@ struct RemoteImageView_Previews: PreviewProvider {
         
         // Good URL example
         RemoteImageView(urlOfImageToShow: {
-            "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_5989.jpg"
+            "https://images.dog.ceo/breeds/finnish-lapphund/mochilamvan.jpg"
         }())
 
     }
