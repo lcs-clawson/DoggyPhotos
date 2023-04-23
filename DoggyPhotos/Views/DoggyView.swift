@@ -22,9 +22,8 @@ struct DoggyView: View {
             Spacer()
             
             Button(action: {
-                withAnimation(.easeIn(duration: 1.0)) {
-                    // Set the image URL when the button is pressed
-                    imageUrl = currentDoggy.imageUrl
+                Task {
+                    await FetchRandomImage()
                 }
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
@@ -50,6 +49,12 @@ struct DoggyView: View {
                 ProgressView()
                 
             }
+        }
+    }
+    
+    func FetchRandomImage() async {
+        if let doggy = await NetworkService.fetch() {
+            imageUrl = doggy.imageUrl
         }
     }
 }
